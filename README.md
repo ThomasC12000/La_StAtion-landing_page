@@ -2,7 +2,7 @@
 
 ## 🔨 <span id="tech-stack">Tech stack</span>
 
-<p align="left">
+<p align="center">
     <img src="https://img.shields.io/badge/HTML5-e34f26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML5 badge">
     <img src="https://img.shields.io/badge/CSS3-1572b6?logo=css3&logoColor=white&style=for-the-badge" alt="CSS3 badge">
     <img src="https://img.shields.io/badge/JAVASCRIPT-f7df1e?logo=javascript&logoColor=black&style=for-the-badge" alt="JavaScript badge">
@@ -19,4 +19,4 @@
 ## 👷 <span id="authors">Authors</span>
 
 **Thomas Chlpac**
-- Github: [@fchavonet](https://github.com/ThomasC12000)
+- Github: [@ThomasC12000](https://github.com/ThomasC12000)
