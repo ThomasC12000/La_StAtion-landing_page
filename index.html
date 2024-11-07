@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Station | Rodez</title>
+
+    <!-- Lien vers le CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lien vers les icônes Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-button {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #343a40;
+            color: white;
+            font-size: 1.3rem;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-button:hover {
+            background-color: #007bff;
+        }
+
+        .social-button i {
+            margin: 0;
+        }
+
+        /* Style pour les sections d'images et textes alternés */
+        .image-text-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .image-text-section img {
+            width: 40%;  /* L'image prend 40% de la largeur de son conteneur */
+            height: auto; /* L'image conserve ses proportions */
+            max-height: 400px;  /* Limite la hauteur de l'image pour qu'elle ne devienne pas trop grande */
+            object-fit: cover;  /* Assure que l'image couvre tout l'espace disponible sans déformer */
+            border-radius: 8px;  /* Ajoute des coins arrondis pour un look moderne */
+            border: 1px solid rgb(34, 37, 41);  /* Ajoute une bordure de couleur */
+        }
+
+        .image-text-section .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-text-section:not(.reverse) .content {
+            margin-left: 20px;  /* Espace entre l'image à gauche et le texte */
+        }
+
+        .image-text-section.reverse .content {
+            order: 2;
+            margin-right: 20px;  /* Espace entre l'image à droite et le texte */
+        }
+
+        /* Ajustement pour les écrans très larges (optionnel) */
+        @media (min-width: 1200px) {
+            .image-text-section img {
+                max-height: 500px;  /* Augmente la hauteur de l'image sur les grands écrans */
+            }
+        }
+
+                /* Section Caractéristiques */
+                .card {
+                    border-radius: 12px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+        
+                .card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                }
+        
+                .card-body i {
+                    font-size: 4rem;
+                    margin-bottom: 20px;
+                    color: #007bff;
+                }
+        
+                .card-title {
+                    font-size: 1.5rem;
+                    color: #333;
+                }
+        
+                .card-text {
+                    font-size: 1rem;
+                    color: #555;
+                }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="img/stationA.png" width="45" height="45" class="d-inline-block me-2" alt="Logo de La Station" />
+                <span class="d-none d-lg-inline me-3">
+                    La St<strong style="color: orange;">A</strong>tion | Rodez
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="window.location.href='mailto:thomas.chlpac.pro@hotmail.com'">Nous contacter</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container mt-5 pt-5">
+
+        <!-- Section principale -->
+        <section id="main" class="text-center mb-5">
+            <h1 class="display-4">La St<strong style="color: orange;">A</strong>tion</h1>
+            <p class="lead">Votre espace de coworking à Rodez. Innovant, dynamique et collaboratif.</p>
+        </section>
+
+        <!-- Section Caractéristiques -->
+        <section id="features" class="mb-5">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-lg h-100">
+                        <div class="card-body text-center" style="padding-top: 0rem;">
+                            <i class="bi bi-wifi" style="font-size: 3rem; color: #007bff; margin-top: -10px;"></i>
+                            <h5 class="card-title">Internet Haut Débit</h5>
+                            <p class="card-text">Connexion rapide et fiable pour vos besoins.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-lg h-100">
+                        <div class="card-body text-center" style="padding-top: 0rem;">
+                            <i class="bi bi-person-fill" style="font-size: 3rem; color: #28a745; margin-top: -10px;"></i>
+                            <h5 class="card-title">Communauté Dynamique</h5>
+                            <p class="card-text">Faites partie d'une communauté de professionnels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shadow-lg h-100">
+                        <div class="card-body text-center" style="padding-top: 0rem;">
+                            <i class="bi bi-cup-straw" style="font-size: 3rem; color: #ffc107; margin-top: -10px;"></i>
+                            <h5 class="card-title">Espaces Confortables</h5>
+                            <p class="card-text">Des espaces inspirants et adaptés à vos besoins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <br>
+
+        <section class="image-text-section">
+            <div class="content text-center">
+                <h2>Un lieu, une histoire</h2>
+                <p>Toutes les informations pertinentes visibles en un seul clic.</p>
+            </div>
+            <img src="img/home.png" alt="Espace de travail" class="img-fluid">
+        </section>
+        
+        <br>
+        
+        <section class="image-text-section reverse">
+            <div class="content text-center">
+                <h2>Communauté Collaborative</h2>
+                <p>Rejoignez une communauté dynamique d'entrepreneurs et de professionnels partageant vos valeurs au sein de nos espaces de coworking.</p>
+            </div>
+            <img src="img/espace_coworking.png" alt="Communauté de travail" class="img-fluid">
+        </section>
+        
+        <hr>
+        <br>
+        
+        <section id="main" class="text-center mb-5">
+            <h1 class="display-4">Espace Coworking</h1>
+            <p class="lead">Accédez à un espace dédié, incluant différents outils pour les utilisateurs des espaces de coworking.</p>
+        </section>
+        
+        <section class="image-text-section">
+            <div class="content text-center">
+                <h2>Informations Personnelles</h2>
+                <p>Ayez un accès complet à vos informations personnelles.</p>
+            </div>
+            <img src="img/userinfo.png" alt="Informations personnelles" class="img-fluid">
+        </section>
+        
+        <br>
+        
+        <section class="image-text-section">
+            <div class="content text-center">
+                <h2>Calendrier</h2>
+                <p>Accédez à un calendrier pour ne manquer aucun de vos rendez-vous.</p>
+            </div>
+            <img src="img/calendrier.png" alt="Calendrier" class="img-fluid">
+        </section>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <br>
+            <div class="social-buttons">
+                <button class="social-button">
+                    <i class="bi bi-facebook"></i>
+                </button>
+                <button class="social-button" onclick="window.open('https://github.com/ThomasC12000', '_blank')">
+                    <i class="bi bi-github"></i>
+                </button>
+                <button class="social-button">
+                    <i class="bi bi-instagram"></i>
+                </button>
+                <button class="social-button">
+                    <i class="bi bi-linkedin"></i>
+                </button>
+                <button class="social-button">
+                    <i class="bi bi-twitter"></i>
+                </button>
+            </div>
+            <p class="mt-3">© 2024 - La St<strong style="color: orange;">A</strong>tion</p>
+        </div>
+    </footer>
+
+    <!-- Lien vers le script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
